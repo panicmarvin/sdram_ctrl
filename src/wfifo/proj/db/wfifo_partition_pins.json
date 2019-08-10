@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "fifo_full",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_empty",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_wr_clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_wr_en",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_clk",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_rd_en",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_wr_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_wr_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_wr_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_wr_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_wr_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_wr_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_wr_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_wr_data[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

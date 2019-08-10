@@ -1,0 +1,523 @@
+# Reading C:/eda/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do wfifo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/eda/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo {C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:46 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo" C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v 
+# -- Compiling module wfifo
+# 
+# Top level modules:
+# 	wfifo
+# End time: 19:38:46 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:46 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj" C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v 
+# -- Compiling module ram_1024x8_w
+# 
+# Top level modules:
+# 	ram_1024x8_w
+# End time: 19:38:46 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.. {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:47 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.." C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v 
+# -- Compiling module tb_wfifo
+# 
+# Top level modules:
+# 	tb_wfifo
+# End time: 19:38:47 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_wfifo
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_wfifo 
+# Start time: 19:38:47 on Aug 03,2019
+# Loading work.tb_wfifo
+# ** Error: (vsim-3033) C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v(68): Instantiation of 'async_fifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wfifo File: C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v
+#         Searched libraries:
+#             C:/eda/intelFPGA/18.1/modelsim_ase/altera/verilog/altera
+#             C:/eda/intelFPGA/18.1/modelsim_ase/altera/verilog/220model
+#             C:/eda/intelFPGA/18.1/modelsim_ase/altera/verilog/sgate
+#             C:/eda/intelFPGA/18.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/eda/intelFPGA/18.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/eda/intelFPGA/18.1/modelsim_ase/altera/verilog/cyclonev
+#             C:/eda/intelFPGA/18.1/modelsim_ase/altera/verilog/cyclonev_hssi
+#             C:/eda/intelFPGA/18.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work
+#             C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./wfifo_run_msim_rtl_verilog.do PAUSED at line 13
+do wfifo_run_msim_rtl_verilog.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo {C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:39:24 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo" C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v 
+# -- Compiling module wfifo
+# 
+# Top level modules:
+# 	wfifo
+# End time: 19:39:24 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:39:24 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj" C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v 
+# -- Compiling module ram_1024x8_w
+# 
+# Top level modules:
+# 	ram_1024x8_w
+# End time: 19:39:24 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.. {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:39:24 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.." C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v 
+# -- Compiling module tb_wfifo
+# 
+# Top level modules:
+# 	tb_wfifo
+# End time: 19:39:24 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_wfifo
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_wfifo 
+# Start time: 19:38:47 on Aug 03,2019
+# Loading work.tb_wfifo
+# Loading work.wfifo
+# Loading work.ram_1024x8_w
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v(65)
+#    Time: 4040 ns  Iteration: 0  Instance: /tb_wfifo
+# Break in Module tb_wfifo at C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v line 65
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+do wfifo_run_msim_rtl_verilog.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# Error 31: Unable to unlink file "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work/_lib.qdb".
+# Error 31: Unable to unlink file "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work/_lib1_0.qdb".
+# Error 31: Unable to unlink file "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work".
+# vlib rtl_work
+# ** Error: (vlib-35) Failed to create directory "rtl_work".
+# File exists. (errno = EEXIST)
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo {C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:45:44 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo" C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v 
+# -- Compiling module wfifo
+# 
+# Top level modules:
+# 	wfifo
+# End time: 19:45:44 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:45:44 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj" C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v 
+# -- Compiling module ram_1024x8_w
+# 
+# Top level modules:
+# 	ram_1024x8_w
+# End time: 19:45:44 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.. {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:45:45 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.." C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v 
+# -- Compiling module tb_wfifo
+# ** Error: C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v(43): 'wr_cnt' already exists; must not be redefined as a named block
+# End time: 19:45:45 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/eda/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./wfifo_run_msim_rtl_verilog.do line 11
+# C:/eda/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.. {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v}"
+do wfifo_run_msim_rtl_verilog.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# Error 31: Unable to unlink file "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work/_lib.qdb".
+# Error 31: Unable to unlink file "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work/_lib1_0.qdb".
+# Error 31: Unable to unlink file "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work".
+# vlib rtl_work
+# ** Error: (vlib-35) Failed to create directory "rtl_work".
+# File exists. (errno = EEXIST)
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo {C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:45:54 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo" C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v 
+# -- Compiling module wfifo
+# 
+# Top level modules:
+# 	wfifo
+# End time: 19:45:55 on Aug 03,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:45:55 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj" C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v 
+# -- Compiling module ram_1024x8_w
+# 
+# Top level modules:
+# 	ram_1024x8_w
+# End time: 19:45:55 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.. {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:45:55 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.." C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v 
+# -- Compiling module tb_wfifo
+# 
+# Top level modules:
+# 	tb_wfifo
+# End time: 19:45:55 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_wfifo
+# End time: 19:45:56 on Aug 03,2019, Elapsed time: 0:07:09
+# Errors: 19, Warnings: 2
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_wfifo 
+# Start time: 19:45:56 on Aug 03,2019
+# Loading work.tb_wfifo
+# Loading work.wfifo
+# Loading work.ram_1024x8_w
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v(72)
+#    Time: 15050 ns  Iteration: 0  Instance: /tb_wfifo
+# Break in Module tb_wfifo at C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v line 72
+add wave -position insertpoint  \
+sim:/tb_wfifo/inst/rst_n \
+sim:/tb_wfifo/inst/fifo_wr_en \
+sim:/tb_wfifo/inst/fifo_wr_data \
+sim:/tb_wfifo/inst/fifo_rd_en \
+sim:/tb_wfifo/inst/fifo_rd_clk \
+sim:/tb_wfifo/inst/fifo_wr_clk \
+sim:/tb_wfifo/inst/fifo_full \
+sim:/tb_wfifo/inst/fifo_rd_data \
+sim:/tb_wfifo/inst/fifo_empty \
+sim:/tb_wfifo/inst/rdaddress \
+sim:/tb_wfifo/inst/wraddress \
+sim:/tb_wfifo/inst/wr_ram \
+sim:/tb_wfifo/inst/rd_ram \
+sim:/tb_wfifo/inst/gray_rdaddress \
+sim:/tb_wfifo/inst/gray_wraddress \
+sim:/tb_wfifo/inst/sync_w2r_r1 \
+sim:/tb_wfifo/inst/sync_w2r_r2 \
+sim:/tb_wfifo/inst/sync_r2w_r1 \
+sim:/tb_wfifo/inst/sync_r2w_r2
+restart
+do wfifo_run_msim_rtl_verilog.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo {C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:03 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo" C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v 
+# -- Compiling module wfifo
+# 
+# Top level modules:
+# 	wfifo
+# End time: 19:48:03 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:03 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj" C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v 
+# -- Compiling module ram_1024x8_w
+# 
+# Top level modules:
+# 	ram_1024x8_w
+# End time: 19:48:03 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.. {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:48:03 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.." C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v 
+# -- Compiling module tb_wfifo
+# 
+# Top level modules:
+# 	tb_wfifo
+# End time: 19:48:03 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_wfifo
+# End time: 19:48:05 on Aug 03,2019, Elapsed time: 0:02:09
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_wfifo 
+# Start time: 19:48:05 on Aug 03,2019
+# Loading work.tb_wfifo
+# Loading work.wfifo
+# Loading work.ram_1024x8_w
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v(72)
+#    Time: 15050 ns  Iteration: 0  Instance: /tb_wfifo
+# Break in Module tb_wfifo at C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v line 72
+add wave -position insertpoint  \
+sim:/tb_wfifo/inst/rst_n \
+sim:/tb_wfifo/inst/fifo_wr_en \
+sim:/tb_wfifo/inst/fifo_wr_data \
+sim:/tb_wfifo/inst/fifo_rd_en \
+sim:/tb_wfifo/inst/fifo_rd_clk \
+sim:/tb_wfifo/inst/fifo_wr_clk \
+sim:/tb_wfifo/inst/fifo_full \
+sim:/tb_wfifo/inst/fifo_rd_data \
+sim:/tb_wfifo/inst/fifo_empty \
+sim:/tb_wfifo/inst/rdaddress \
+sim:/tb_wfifo/inst/wraddress \
+sim:/tb_wfifo/inst/wr_ram \
+sim:/tb_wfifo/inst/rd_ram \
+sim:/tb_wfifo/inst/gray_rdaddress \
+sim:/tb_wfifo/inst/gray_wraddress \
+sim:/tb_wfifo/inst/sync_w2r_r1 \
+sim:/tb_wfifo/inst/sync_w2r_r2 \
+sim:/tb_wfifo/inst/sync_r2w_r1 \
+sim:/tb_wfifo/inst/sync_r2w_r2
+restart
+run -all
+# ** Note: $stop    : C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v(72)
+#    Time: 15050 ns  Iteration: 0  Instance: /tb_wfifo
+# Break in Module tb_wfifo at C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v line 72
+# WARNING: No extended dataflow license exists
+run -all
+do wfifo_run_msim_rtl_verilog.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# Error 31: Unable to unlink file "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work".
+# vlib rtl_work
+# ** Error: (vlib-35) Failed to create directory "rtl_work".
+# File exists. (errno = EEXIST)
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo {C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:22 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo" C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v 
+# -- Compiling module wfifo
+# 
+# Top level modules:
+# 	wfifo
+# End time: 19:59:22 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:22 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj" C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v 
+# -- Compiling module ram_1024x8_w
+# 
+# Top level modules:
+# 	ram_1024x8_w
+# End time: 19:59:22 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.. {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:22 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.." C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v 
+# -- Compiling module tb_wfifo
+# 
+# Top level modules:
+# 	tb_wfifo
+# End time: 19:59:22 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_wfifo
+# End time: 19:59:25 on Aug 03,2019, Elapsed time: 0:11:20
+# Errors: 0, Warnings: 1
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_wfifo 
+# Start time: 19:59:25 on Aug 03,2019
+# Loading work.tb_wfifo
+# Loading work.wfifo
+# Loading work.ram_1024x8_w
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v(72)
+#    Time: 15050 ns  Iteration: 0  Instance: /tb_wfifo
+# Break in Module tb_wfifo at C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v line 72
+do wfifo_run_msim_rtl_verilog.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# Error 31: Unable to unlink file "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim/rtl_work".
+# vlib rtl_work
+# ** Error: (vlib-35) Failed to create directory "rtl_work".
+# File exists. (errno = EEXIST)
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo {C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:00:33 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo" C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v 
+# -- Compiling module wfifo
+# 
+# Top level modules:
+# 	wfifo
+# End time: 20:00:33 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:00:33 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj" C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v 
+# -- Compiling module ram_1024x8_w
+# 
+# Top level modules:
+# 	ram_1024x8_w
+# End time: 20:00:34 on Aug 03,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.. {C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:00:34 on Aug 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/.." C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v 
+# -- Compiling module tb_wfifo
+# 
+# Top level modules:
+# 	tb_wfifo
+# End time: 20:00:34 on Aug 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_wfifo
+# End time: 20:00:36 on Aug 03,2019, Elapsed time: 0:01:11
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_wfifo 
+# Start time: 20:00:36 on Aug 03,2019
+# Loading work.tb_wfifo
+# Loading work.wfifo
+# Loading work.ram_1024x8_w
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v(72)
+#    Time: 15050 ns  Iteration: 0  Instance: /tb_wfifo
+# Break in Module tb_wfifo at C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v line 72
+# End time: 20:01:52 on Aug 03,2019, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 0

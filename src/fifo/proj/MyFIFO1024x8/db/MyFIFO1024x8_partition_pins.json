@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Dout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Dout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Dout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Dout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Dout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Dout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Dout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Dout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Empty",
+					"strict" : false
+				},
+				{
+					"name" : "Full",
+					"strict" : false
+				},
+				{
+					"name" : "Wen",
+					"strict" : false
+				},
+				{
+					"name" : "WClk",
+					"strict" : false
+				},
+				{
+					"name" : "RClk",
+					"strict" : false
+				},
+				{
+					"name" : "Ren",
+					"strict" : false
+				},
+				{
+					"name" : "Din[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Rst_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

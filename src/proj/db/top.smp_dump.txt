@@ -1,0 +1,30 @@
+
+State Machine - |top|sdram_top:sdram_top_inst|state
+Name state.READ state.WRITE state.AREF state.ARBIT state.IDLE 
+state.IDLE 0 0 0 0 0 
+state.ARBIT 0 0 0 1 1 
+state.AREF 0 0 1 0 1 
+state.WRITE 0 1 0 0 1 
+state.READ 1 0 0 0 1 
+
+State Machine - |top|sdram_top:sdram_top_inst|sdram_read:sdram_read_inst|state
+Name state.S_PRE state.S_RD state.S_ACT state.S_REQ state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 
+state.S_REQ 0 0 0 1 1 
+state.S_ACT 0 0 1 0 1 
+state.S_RD 0 1 0 0 1 
+state.S_PRE 1 0 0 0 1 
+
+State Machine - |top|sdram_top:sdram_top_inst|sdram_write:sdram_write_inst|state
+Name state.S_PRE state.S_WR state.S_ACT state.S_REQ state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 
+state.S_REQ 0 0 0 1 1 
+state.S_ACT 0 0 1 0 1 
+state.S_WR 0 1 0 0 1 
+state.S_PRE 1 0 0 0 1 
+
+State Machine - |top|uart_tx:uart_tx_inst|cu_state
+Name cu_state.TRANS cu_state.START cu_state.IDLE 
+cu_state.IDLE 0 0 0 
+cu_state.START 0 1 1 
+cu_state.TRANS 1 0 1 

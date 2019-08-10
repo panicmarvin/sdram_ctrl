@@ -1,0 +1,60 @@
+module MyFIFO1024_W16R8 #(
+     parameter Wdata_Width = 16,
+	 parameter Rdata_Width = 8,
+     parameter Raddr_Width = 10,
+	 parameter Waddr_Width = 9
+         )
+    (
+	input								WClk, 
+	input								RClk,
+	input								Rst,
+	input	[Wdata_Width - 1 : 0] 		Din,
+	output	[Rdata_Width - 1 : 0] 		Dout,
+	input								Wen,
+	input								Ren,
+	output								Empty,
+	output								Full
+);
+	
+wire	RAM_We;
+wire	[Waddr_Width - 1 : 0] RAM_Waddr;
+wire	[Raddr_Width - 1 : 0] RAM_Raddr;
+wire	[Wdata_Width - 1 : 0] RAM_Wd;
+wire	[Rdata_Width - 1 : 0] RAM_Rd;           
+
+
+MyFIFO_Ctrl U_MyFIFO_Ctrl (
+	.WClk       (WClk),     
+	//.WClkEn     (WClkEn),   
+	.RClk       (RClk),     
+	//.RClkEn     (RClkEn),   
+	.Rst        (Rst),      
+	.Din        (Din),      
+	.Dout       (Dout),     
+	.Wen        (Wen),      
+	.Ren        (Ren),      
+	.Empty      (Empty),    
+	.Full       (Full), 
+	.Empty_True	(),
+	.Full_True	(),   
+	                      
+	.RAM_We     (RAM_We),   
+	.RAM_Waddr  (RAM_Waddr),
+	.RAM_Raddr  (RAM_Raddr),
+	.RAM_Wd     (RAM_Wd),   
+	.RAM_Rd     (RAM_Rd)    
+);
+
+bram_1024x8_3	U_bram_1024x8 (
+	.data      ( RAM_Wd ),
+	.rdaddress ( RAM_Raddr ),
+	.rdclock   ( RClk ),
+	.wraddress ( RAM_Waddr ),
+	.wrclock   ( WClk ),
+	.wren      ( Wen ),
+	.rden      ( Ren ),
+	.q         ( RAM_Rd )
+	);
+endmodule
+
+

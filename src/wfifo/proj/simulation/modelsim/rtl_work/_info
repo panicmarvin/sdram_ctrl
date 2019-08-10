@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/xuboy/Desktop/sdram/src/wfifo/proj/simulation/modelsim
+vram_1024x8_w
+Z1 !s110 1564833634
+!i10b 1
+!s100 kGLC_FYD0>LZh=I]2EL_?2
+Inh?Se@VQFAL?1BHHf88GJ3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1564832093
+8C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v
+FC:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v
+L0 40
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1564833633.000000
+!s107 C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj|C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/ram_1024x8_w.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj
+Z6 tCvgOpt 0
+vtb_wfifo
+R1
+!i10b 1
+!s100 ?lYhRH;6zm>Jm^<i8MBj^0
+IMJ2]oJSmQgF<jOQM8GQHg3
+R2
+R0
+w1564832853
+8C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v
+FC:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1564833634.000000
+!s107 C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/..|C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/../tb_wfifo.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo/proj/..
+R6
+vwfifo
+!s110 1564833633
+!i10b 1
+!s100 gke^@C2^>NY0[^6N80NaQ1
+IAAJ=J7UYZA;D5zSH=b>^=2
+R2
+R0
+w1564833609
+8C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v
+FC:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo|C:/Users/xuboy/Desktop/sdram/src/wfifo/wfifo.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/xuboy/Desktop/sdram/src/wfifo
+R6
