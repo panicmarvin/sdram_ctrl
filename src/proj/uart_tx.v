@@ -21,8 +21,8 @@ localparam		IDLE			=		3'b001;
 localparam		START			=		3'b010;
 localparam		TRANS			=		3'b100;
 reg     [2:0] 					nx_state,cu_state;
-reg                       		tx_trig_r, tx_trig_r1           ;
-reg     [ 7:0]                  tx_data_r, tx_data_r1           ;
+reg                       		tx_trig_r           ;
+reg     [ 7:0]                  tx_data           ;
 reg     [12:0]                  baud_cnt                        ;
 wire                            bit_flag                        ;
 reg     [ 3:0]                  bit_cnt                         ;
@@ -58,18 +58,20 @@ always  @(posedge clk or negedge rst_n) begin
         else
                 rfifo_rd_en     <=      1'b0;
 end
+
 assign	tx_trig = rfifo_rd_en;
 always  @(posedge clk) begin
         tx_trig_r        <=      tx_trig;
-		tx_trig_r1       <=      tx_trig_r;
+		  data_vld       <=      tx_trig_r;
 end
+
 always  @(posedge clk or negedge rst_n) begin
         if(rst_n == 1'b0)
-                tx_data_r      <=      'd1;
-        else if(tx_trig_r1)
-				tx_data_r		<=	 rfifo_rd_data ;
+                tx_data      <=      'd1;
+        else if(data_vld==1'b1)
+				tx_data		<=	 rfifo_rd_data ;
 		else if(cu_state==TRANS&&bit_flag==1'b1&&bit_cnt>=1)
-				tx_data_r		<=	{1'b1,tx_data_r[7:1]};
+				tx_data		<=	{1'b1,tx_data[7:1]};
 end
 
 always  @(posedge clk or negedge rst_n) begin
@@ -89,7 +91,7 @@ always  @(*) begin
 							else
 								nx_state	=	IDLE;
 					START:
-							if(tx_trig_r1)
+							if(data_vld==1'b1)
 								nx_state	=	TRANS;
 							else
 								nx_state	=	START;
@@ -103,8 +105,5 @@ always  @(*) begin
 		end
 
 
-assign 				rs232_tx = cu_state==TRANS?(bit_cnt==0?1'b0:tx_data_r[0]):1'b1;
-always  @(posedge clk) begin
-        data_vld       <=      tx_trig_r;
-end
+assign 				rs232_tx = cu_state==TRANS?(bit_cnt==0?1'b0:tx_data[0]):1'b1;
 endmodule

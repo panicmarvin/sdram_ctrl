@@ -13,14 +13,14 @@ module  uart_rx(
 //====================================================================/
 localparam      BAUD_END        =       434                    ;
 localparam      BAUD_M          =       BAUD_END/2 - 1          ;
-localparam      BIT_END         =       9                       ;
+localparam      BIT_END         =       10                       ;
 
 reg                             rx_r1                           ;
 reg                             rx_r2                           ;
 reg                             rx_r3                           ;
 reg                             rx_flag                         ;
 reg     [12:0]                  baud_cnt                        ;
-wire                            bit_flag                        ;
+wire                            bit_tick                        ;
 reg     [ 3:0]                  bit_cnt                         ;
 
 wire                            rx_neg_flag                          ;
@@ -38,14 +38,16 @@ end
 always  @(posedge clk or negedge rst_n) begin
         if(rst_n == 1'b0)
                 rx_flag <=      1'b0;
-        else if(rx_neg_flag == 1'b1)
+        else if(bit_cnt == 0 && rx_neg_flag == 1'b1)
                 rx_flag <=      1'b1;
-        else if(bit_cnt == 'd0 && baud_cnt == BAUD_END-10)
+        else if(bit_cnt == BIT_END-1 && bit_tick == 1'b1)
                 rx_flag <=      1'b0;
 end
 
 always  @(posedge clk or negedge rst_n) begin
         if(rst_n == 1'b0)
+                baud_cnt        <=      'd0;
+        else if(bit_cnt == BIT_END)
                 baud_cnt        <=      'd0;
         else if(baud_cnt == BAUD_END)
                 baud_cnt        <=      'd0;
@@ -55,14 +57,14 @@ always  @(posedge clk or negedge rst_n) begin
                 baud_cnt        <=      'd0;
 end
 
-assign bit_flag	=	baud_cnt == BAUD_M?1'b1:1'b0;
+assign bit_tick	=	baud_cnt == BAUD_M?1'b1:1'b0;
 
 always  @(posedge clk or negedge rst_n) begin
         if(rst_n == 1'b0)
                 bit_cnt <=      'd0;
-        else if(bit_flag == 1'b1 && bit_cnt == BIT_END) 
+        else if(bit_cnt == BIT_END) 
                 bit_cnt <=      'd0;
-        else if(bit_flag == 1'b1)
+        else if(bit_tick == 1'b1)
                 bit_cnt <=      bit_cnt + 1'b1;
 end
 
@@ -70,14 +72,14 @@ end
 always  @(posedge clk or negedge rst_n) begin
         if(rst_n == 1'b0)
                 rx_data <=      'd0;
-        else if(bit_flag == 1'b1 && bit_cnt >= 'd1)
+        else if(bit_tick == 1'b1 && bit_cnt >= 'd1 && bit_cnt <= 'd8)
                 rx_data <=      {rx_r2, rx_data[7:1]};
 end
 
 always  @(posedge clk or negedge rst_n) begin
         if(rst_n == 1'b0)
                 rx_data_vld <=      1'b0;
-        else if(bit_cnt == 8 && bit_flag == 1'b1)
+        else if(bit_cnt == 8 && bit_tick == 1'b1)
                 rx_data_vld <=      1'b1;
         else
                 rx_data_vld <=      1'b0;

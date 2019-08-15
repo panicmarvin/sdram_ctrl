@@ -80,11 +80,11 @@ always  @(posedge sclk or negedge s_rst_n) begin
                         else
                                 state   <=      IDLE;
                 ARBIT://仲裁至少有两个周期，后一个周期可能会出现一些问题
-                        if(ref_req == 1'b1)
+                        if(ref_en == 1'b1)
                                 state   <=      AREF;
-                        else if(rd_req == 1'b1)
+                        else if(rd_en == 1'b1)
                                 state   <=      READ;
-                        else if(wr_req == 1'b1)
+                        else if(wr_en == 1'b1)
                                 state   <=      WRITE;
                         else
                                 state   <=      ARBIT;
@@ -112,7 +112,7 @@ end
 always  @(posedge sclk or negedge s_rst_n) begin
         if(s_rst_n == 1'b0)
                 ref_en  <=      1'b0;
-        else if(state == AREF) //仲裁第二个周期，用在读写请求后马上又出现一个刷新请求，当前读写使能为1，但还不能处理刷新
+        else if(state == ARBIT && ref_req == 1'b1 && wr_en == 0 && rd_en == 0) //仲裁第二个周期，用在读写请求后马上又出现一个刷新请求，当前读写使能为1，但还不能处理刷新
                 ref_en  <=      1'b1;
         else
                 ref_en  <=      1'b0;
@@ -122,7 +122,7 @@ end
 always  @(posedge sclk or negedge s_rst_n) begin
         if(s_rst_n == 1'b0)
                 wr_en   <=      1'b0;
-        else if(state == WRITE)
+        else if(state == ARBIT && ref_req == 1'b0 && wr_req == 1'b1 && rd_req == 1'b0)
                 wr_en   <=      1'b1;
         else
                 wr_en   <=      1'b0;
@@ -132,7 +132,7 @@ end
 always  @(posedge sclk or negedge s_rst_n) begin
         if(s_rst_n == 1'b0)
                 rd_en   <=      1'b0;
-        else if(state == READ)
+        else if(state == ARBIT && ref_req == 1'b0 && rd_req == 1'b1)
                 rd_en   <=      1'b1;
         else 
                 rd_en   <=      1'b0;        
